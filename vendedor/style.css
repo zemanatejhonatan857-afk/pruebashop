@@ -1,0 +1,126 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f7;
+}
+
+.barra-superior {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 40px;
+  background: linear-gradient(135deg, #0f3269, #1302ff, #167439);
+  color: white;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+
+.titulo {
+  margin: 0;
+  font-size: 36px;  
+  font-weight: 800;
+}
+
+.subtitulo {
+   margin: 2px 0 0 0;
+  font-size: 16px;  
+  font-weight: 400;
+}
+
+#estadoTexto {
+  position: absolute;  
+  top: 40px;           
+  right: 100px;         
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.25);
+  color: white;
+  font-size: 14px;
+}
+
+#map {
+  position: absolute;
+  top: 90px;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.panel-vendedor {
+  position: fixed;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  padding: 18px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  z-index: 2000;
+  text-align: center;
+}
+
+.panel-vendedor h3 {
+  margin-top: 0;
+}
+
+.panel-vendedor input {
+  width: 100%;
+  padding: 9px;
+  margin: 6px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+.botones {
+  margin-top: 10px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 14px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  transition: 0.2s;
+}
+
+.activar { background: #16a34a; }
+.inactivar { background: #dc2626; }
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-inactivar-float {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  z-index: 3000;
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.btn-inactivar-float:hover {
+  transform: scale(1.05);
+}
+
+.oculto {
+  display: none;
+}

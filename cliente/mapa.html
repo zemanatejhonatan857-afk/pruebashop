@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Vendedores Ambulantes - Popayán</title>
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    ShopStarter
+    <br>
+    <br>
+    Vendedores Ambulantes - Popayán
+</header>
+
+
+<div class="top-controls">
+
+    
+    <select id="buscadorCategoria">
+        <option value="todos"> Todas las categorías</option>
+        <option value="comida"> Comida rápida</option>
+        <option value="fruta"> Frutas</option>
+        <option value="bebida"> Bebidas</option>
+        <option value="dulces"> Dulces</option>
+    </select>
+
+    
+    <button class="btn btn-ubicacion" onclick="mostrarUbicacion()">
+         Mi ubicación
+    </button>
+
+</div>
+
+<div id="panelVendedor">
+    <h3 id="nombreVendedor"></h3>
+    <p id="infoVendedor"></p>
+    <img id="imgProducto" src="" alt="Producto del vendedor">
+
+    <button id="btnRecorrido" class="btn btn-iniciar" onclick="iniciarRecorrido()">
+       Iniciar recorrido
+    </button>
+</div>
+
+<div id="coordsBox">Lat: 0 | Lng: 0</div>
+<div id="coordDisplay">Lat: -, Lng: -</div>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
+
+<script src="mapa.js"></script>
+
+</body>
+</html>

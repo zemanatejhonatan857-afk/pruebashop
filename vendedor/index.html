@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel Vendedor - Popayán</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="barra-superior">
+    <div class="titulo">
+      <h1 class="titulo">ShopStarter</h1>
+      <h3 class="subtitulo">Vendedores Ambulantes - Popayán</h3>
+    </div>
+    <span id="estadoTexto">INACTIVO</span>
+  </header>
+
+  <div id="map"></div>
+
+  <div id="panelVendedor" class="panel-vendedor">
+    <h3>Panel del Vendedor</h3>
+
+    <div class="grupo">
+      <label>Nombre del negocio:</label>
+      <input type="text" id="nombreNegocio">
+    </div>
+
+    <div class="grupo">
+      <label>Horario:</label>
+      <input type="time" id="horaInicio"> a
+      <input type="time" id="horaFin">
+    </div>
+
+    <div class="grupo">
+      <label>Foto del producto:</label>
+      <input type="file" id="imagenNegocio" accept="image/*">
+      <img id="previewImagen" src="" style="display:none; width:100px; margin-top:6px; border-radius:8px;">
+    </div>
+
+    <div class="botones">
+      <button id="btnActivar" class="btn activar">Activar</button>
+      <button id="btnInactivar" class="btn inactivar">Inactivar</button>
+    </div>
+  </div>
+
+  <button id="btnInactivarFloat" class="btn-inactivar-float oculto">Inactivar</button>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script src="vend.js"></script>
+
+</body>
+</html>
