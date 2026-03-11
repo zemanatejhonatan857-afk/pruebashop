@@ -168,7 +168,7 @@ function simularRecorrido(coords) {
 
         if (i >= coords.length) {
             clearInterval(intervalo);
-            marcadorSimulacion.bindPopup("Llegaste 🎉").openPopup();
+            marcadorSimulacion.bindPopup("Llegaste ").openPopup();
             return;
         }
 
